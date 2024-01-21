@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    platform: PLATFORM
+    shm_size: SHM_SIZE
+    volumes:
+      - ./:/kaggle
+        ./input /kaggle/input
+        ./scripts /kaggle/scripts
+    working_dir: /kaggle
+    ports:
+      - "8888:8888"
+    tty: true
