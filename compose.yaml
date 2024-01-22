@@ -4,10 +4,10 @@ services:
     platform: linux/arm64/v8
     shm_size: '16gb'
     volumes:
-      - ./:/kaggle
+      - ./notebook:/kaggle
         ./input /kaggle/input
+        ./output /kaggle/output
         ./scripts /kaggle/scripts
-    working_dir: /kaggle
     ports:
       - "8888:8888"
     tty: true
