@@ -4,7 +4,7 @@ ARG LANGUAGE
 ARG LC_ALL
 
 # 現行ではGPUを使用しないが、諸々更新が続いているのはこちらのシリーズなので採用。
-FROM gcr.io/kaggle-gpu-images/python:${KAGGLE_DOCKER_TAG}
+FROM gcr.io/kaggle-gpu-images/python:v142
 
 #言語と地域の設定
 ENV lang=${LANG} language=${LANGUAGE} lc_all=${LC_ALL}

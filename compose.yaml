@@ -1,8 +1,8 @@
 services:
   app:
     build: .
-    platform: PLATFORM
-    shm_size: SHM_SIZE
+    platform: linux/arm64/v8
+    shm_size: '16gb'
     volumes:
       - ./:/kaggle
         ./input /kaggle/input
