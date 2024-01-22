@@ -5,9 +5,6 @@ services:
     shm_size: '16gb'
     volumes:
       - ./notebook:/kaggle
-        ./input /kaggle/input
-        ./output /kaggle/output
-        ./scripts /kaggle/scripts
     ports:
       - "8888:8888"
     tty: true
