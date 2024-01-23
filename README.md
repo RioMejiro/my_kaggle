@@ -5,10 +5,12 @@ worked on docker version 24.x.x higher
 
 how to build and run
 ```bash
-$ cd {project name}/
+$ cd my-kaggle/
 #edit your .env
 $ cp .env.sample .env
 $ docker compose up -d
+
+$ cd my-kaggle/notebook/
 ```
 
 # acess jupyter notebook
